@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/antwang/mmp-action-sheet.git"
   },
   "author": "antwang",
   "license": "MIT",

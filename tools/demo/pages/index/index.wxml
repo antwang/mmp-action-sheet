@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <button type="primary" bindtap="showActionSheet">调用actionsheet</button>
+  <comp actionSheetStatus="{{actionSheetStatus}}">
+    <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">使用微信头像</button>
+    <button data-source-type="album">使用相册图片</button>
+    <button data-source-type="camera">拍照</button>
+  </comp>
+</view>

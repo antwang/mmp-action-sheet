@@ -1,0 +1,8 @@
+<view hidden="{{!actionSheetStatus}}" class="mask animated {{animationMask}}" catchtouchmove bindtap="closeActionSheet">
+  <view class="actionSheet animated {{animationSheet}}">
+    <slot></slot>
+    <view class="closeWrapper">
+    <button class="close" bindtap="closeActionSheet">{{closeText}}</button>
+    </view>
+  </view>
+</view>

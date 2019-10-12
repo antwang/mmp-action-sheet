@@ -1,0 +1,97 @@
+.mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+.actionSheet{
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  z-index: 1000;
+  overflow: hidden;
+}
+.actionSheet button,
+.actionSheet navigator{
+  color: #000;
+  text-align: center;
+  background: #fff;
+  border-radius: 0;
+  line-height: 3.5;
+  font-size: 32rpx;
+  border-bottom: 1rpx solid rgb(236, 236, 236);
+  opacity: 1;
+}
+.actionSheet button:active,
+.actionSheet navigator:active{
+  color:#000;
+  background: rgb(236, 236, 236);
+}
+.actionSheet button::after,
+.actionSheet navigator::after
+{
+  border: none;
+  border-radius: 0;
+}
+.actionSheet .close{
+  border-bottom: none;
+  border-bottom: 50rpx solid #fff;
+  border-top: 16rpx solid rgb(236, 236, 236);
+}
+.animated {
+  animation-timing-function: ease-out;
+  animation-duration: 0.2s;
+  animation-fill-mode: both;
+}
+
+
+@keyframes fadeInBottom {
+from{
+   transform: translate3d(0, 0, 0);
+ }
+  to {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+.fadeInBottom {
+  animation-name: fadeInBottom;
+}
+
+@keyframes fadeOutBottom {
+from{
+   transform: translate3d(0, -100%, 0);
+ }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeOutBottom {
+  animation-name: fadeOutBottom;
+}
+
+@keyframes fadeIn {
+from{
+   opacity: 0;
+ }
+  to {
+     opacity: 1;
+  }
+}
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeOut {
+from{
+   opacity: 1;
+ }
+  to {
+     opacity: 0;
+  }
+}
+.fadeOut {
+  animation-name: fadeOut;
+}

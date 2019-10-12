@@ -1,7 +1,7 @@
 {
   "name": "mmp-action-sheet",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "WeChat miniprogram custom actionsheet",
   "main": "miniprogram_dist/index.js",
   "scripts": {
     "dev": "gulp dev --develop",
